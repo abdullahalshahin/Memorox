@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".AboutActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/textAboutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Main Description -->
+            <TextView
+                android:id="@+id/textAboutDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Memorox Notes is a simple and secure note-taking app designed to help users write, save, and organize their personal notes with full privacy. The app focuses on simplicity, speed, and offline-first usage so users can take notes anytime without internet access.\n\nAll notes are stored locally on your device, giving you complete control over your information. There are no sign-ins, no accounts, and no data collection — your privacy stays with you.\n\nMemoroX Notes is developed to provide a distraction-free writing space where users can focus on capturing ideas, reminders, to-do lists, and personal information quickly and easily."
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Highlights Title -->
+            <TextView
+                android:id="@+id/textHighlightsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Key Highlights:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Highlights List -->
+            <TextView
+                android:id="@+id/textHighlights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Fast and lightweight note-taking\n• 100% offline — no internet required\n• No user account or registration\n• Fully private — stored only on device\n• Clean and easy-to-use interface"
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Mission Section -->
+            <TextView
+                android:id="@+id/textMissionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Mission"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textMissionContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our goal is to create a secure, minimal, and user-friendly notebook app that respects user privacy and makes note-taking simple for everyone."
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

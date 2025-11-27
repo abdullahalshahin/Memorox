@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Action Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:text="SAVE"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"
+            android:elevation="3dp"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="DELETE"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:elevation="3dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/colorPalette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <View
+            android:id="@+id/color1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="#F44336"
+            android:tag="#F44336"
+            android:layout_margin="6dp" />
+
+        <View
+            android:id="@+id/color2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="#FF9800"
+            android:tag="#FF9800"
+            android:layout_margin="6dp" />
+
+        <View
+            android:id="@+id/color3"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="#FFEB3B"
+            android:tag="#FFEB3B"
+            android:layout_margin="6dp" />
+
+        <View
+            android:id="@+id/color4"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="#4CAF50"
+            android:tag="#4CAF50"
+            android:layout_margin="6dp" />
+
+        <View
+            android:id="@+id/color5"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="#2196F3"
+            android:tag="#2196F3"
+            android:layout_margin="6dp" />
+
+        <View
+            android:id="@+id/color6"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="#3F51B5"
+            android:tag="#3F51B5"
+            android:layout_margin="6dp" />
+
+        <View
+            android:id="@+id/color7"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="#9C27B0"
+            android:tag="#9C27B0"
+            android:layout_margin="6dp" />
+
+    </LinearLayout>
+
+    <!-- Title Field -->
+    <EditText
+        android:id="@+id/etTitle"
+        android:hint="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:padding="10dp"
+        android:background="@android:color/transparent"
+        android:inputType="textCapSentences"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Note Content -->
+    <EditText
+        android:id="@+id/etContent"
+        android:hint="Write your note here..."
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:padding="10dp"
+        android:background="@android:color/transparent"
+        android:textSize="16sp"
+        android:textColor="#424242"
+        android:scrollbars="vertical" />
+</LinearLayout>

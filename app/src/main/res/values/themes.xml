@@ -1,0 +1,36 @@
+<!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="Base.Theme.Memorox" parent="Theme.MaterialComponents.DayNight.DarkActionBar">-->
+<!--        &lt;!&ndash; Status bar color &ndash;&gt;-->
+<!--        <item name="android:statusBarColor">#3265B8</item>-->
+
+<!--        &lt;!&ndash; ActionBar color &ndash;&gt;-->
+<!--        <item name="colorPrimary">#4286f5</item>-->
+
+<!--        &lt;!&ndash; ActionBar text color &ndash;&gt;-->
+<!--        <item name="android:textColorPrimary">@color/white</item>-->
+<!--    </style>-->
+
+<!--    <style name="Theme.Memorox" parent="Base.Theme.Memorox" />-->
+<!--</resources>-->
+
+<resources>
+
+    <style name="Theme.Memorox" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">#3265B8</item>
+
+        <!-- ActionBar color -->
+        <item name="colorPrimary">#4286f5</item>
+        <item name="colorPrimaryVariant">#3265B8</item>
+
+        <!-- ActionBar title color -->
+        <item name="android:textColorPrimary">@color/white</item>
+
+        <!-- Disable dark mode -->
+        <item name="android:forceDarkAllowed">false</item>
+
+    </style>
+
+</resources>
