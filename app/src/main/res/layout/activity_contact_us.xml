@@ -60,7 +60,7 @@
                 android:id="@+id/textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="petshall.com@gmial.com"
+                android:text="petshall.com@gmail.com"
                 android:textSize="16sp"
                 android:textColor="#1E88E5"
                 android:autoLink="email"
